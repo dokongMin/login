@@ -2,11 +2,13 @@ package board.login.controller;
 
 import board.login.Dto.MemberDto;
 import board.login.service.MemberService;
+import io.swagger.annotations.Api;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
+@Api(tags = {"1. Member"})
 @Controller
 @AllArgsConstructor
 public class MemberController {
